@@ -43,7 +43,7 @@ class Coordinator {
 
 ```
 
-**AppDelegate에서 구동을 시작한다면 아마도 다음과 같은 모양?**
+**AppDelegate에서 구동을 시작한다면 아마도 다음과 같은 모양이겠죠?**
 
 ```
 let coordinator = Coordinator() 

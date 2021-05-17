@@ -16,11 +16,9 @@ protocol Coordinator: AnyObject {
 
 extension Coordinator {
     
-    func removeChild(_ coordinaotr: Coordinator) {
+    func didChildDismissed(_ coordinaotr: Coordinator) {
         guard let index = children.firstIndex(where: { $0 === coordinaotr})
-        else {
-            return
-        }
+        else { return }
         
         children.remove(at: index)
     }

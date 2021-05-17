@@ -22,26 +22,21 @@ class AppCoordinator: Coordinator {
         viewController.coordinator = self
         rootViewController.setViewControllers([viewController], animated: false)
     }
-    
-    // MARK: - Private
-    private func childFinished(_ coordinator: Coordinator) {
-        self.removeChild(coordinator)
-    }
-    
+
     // MARK: - Public
     func loginButtonPressed() {
         let loginCoordinator = LoginCoordinator(rootViewController: rootViewController)
-        children.append(loginCoordinator)
-        
-        loginCoordinator.finished = childFinished
+        loginCoordinator.dismiss = self.didChildDismissed(_:)
         loginCoordinator.start()
+        
+        children.append(loginCoordinator)
     }
     
     func homeButtonPressed() {
         let homeCoordinator = HomeCoordinator(rootViewController: rootViewController)
-        children.append(homeCoordinator)
-        
-        homeCoordinator.finished = childFinished
+        homeCoordinator.dismiss = self.didChildDismissed(_:)
         homeCoordinator.start()
+        
+        children.append(homeCoordinator)
     }
 }

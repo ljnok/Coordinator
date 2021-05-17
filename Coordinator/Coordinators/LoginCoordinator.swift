@@ -13,7 +13,7 @@ class LoginCoordinator: Coordinator {
     
     var rootViewController: UINavigationController
     
-    var finished: ((Coordinator) -> Void)?
+    var dismiss: ((Coordinator) -> Void)?
     
     init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
@@ -27,6 +27,6 @@ class LoginCoordinator: Coordinator {
     
     // MARK: - Public
     func backButtonPressed() {
-        finished?(self)
+        dismiss?(self)
     }
 }
