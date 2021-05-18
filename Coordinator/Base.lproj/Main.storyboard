@@ -17,23 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-VE-Muv">
-                                <rect key="frame" x="176" y="231" width="62" height="30"/>
+                                <rect key="frame" x="167.5" y="231" width="79" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JPF-h5-kQ9"/>
-                                    <constraint firstAttribute="width" constant="62" id="V2z-JN-q4e"/>
                                 </constraints>
-                                <state key="normal" title="Go Login"/>
+                                <state key="normal" title="Go to Login"/>
                                 <connections>
                                     <action selector="btnLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcR-iK-oN0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-3w-pao">
-                                <rect key="frame" x="174.5" y="281" width="65" height="30"/>
+                                <rect key="frame" x="167.5" y="281" width="82" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="d2o-Rj-nAM"/>
                                     <constraint firstAttribute="height" constant="30" id="rFh-0v-eQP"/>
                                 </constraints>
-                                <state key="normal" title="Go Home"/>
+                                <state key="normal" title="Go to Home"/>
                                 <connections>
                                     <action selector="btnHomePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6F-uY-SRq"/>
                                 </connections>
@@ -45,7 +43,7 @@
                             <constraint firstItem="hiN-VE-Muv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="KK6-fX-N16"/>
                             <constraint firstItem="Buc-3w-pao" firstAttribute="top" secondItem="hiN-VE-Muv" secondAttribute="bottom" constant="20" id="Rhd-5a-DGl"/>
                             <constraint firstItem="hiN-VE-Muv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bME-yq-eLT"/>
-                            <constraint firstItem="Buc-3w-pao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mf9-Fj-5AC"/>
+                            <constraint firstItem="Buc-3w-pao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="mf9-Fj-5AC"/>
                         </constraints>
                     </view>
                 </viewController>

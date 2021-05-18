@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Login"
     }
     
     override func didMove(toParent parent: UIViewController?) {

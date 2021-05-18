@@ -22,7 +22,7 @@ class LoginCoordinator: Coordinator {
     func start() {
         let viewController = LoginViewController.instantiateFromStoryboard()
         viewController.coordinator = self
-        rootViewController.pushViewController(viewController, animated: true)
+        rootViewController.pushViewController(viewController, animated: false)
     }
     
     // MARK: - Public

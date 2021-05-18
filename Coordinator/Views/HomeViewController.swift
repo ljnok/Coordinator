@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Home"
     }
     
     override func didMove(toParent parent: UIViewController?) {
