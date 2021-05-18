@@ -8,18 +8,18 @@
 import UIKit
 
 protocol Coordinator: AnyObject {
-    
+
     var children: [Coordinator] { get set }
-    
-    func start()
+
+    func start(_ deepLink: DeepLink?)
 }
 
 extension Coordinator {
     
-    func didChildDismissed(_ coordinaotr: Coordinator) {
-        guard let index = children.firstIndex(where: { $0 === coordinaotr})
+    func didChildDismissed(_ coordinator: Coordinator) {
+        guard let index = children.firstIndex(where: { $0 === coordinator})
         else { return }
-        
+
         children.remove(at: index)
     }
 }

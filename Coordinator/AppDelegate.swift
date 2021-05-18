@@ -20,8 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navigationController = UINavigationController()
         let appCoordinator = AppCoordinator(rootViewController: navigationController)
-        appCoordinator.start()
         
+        //appCoordinator.start()
+        
+        let appLink = DeepLink(value: AppLink.login)
+        appCoordinator.start(appLink)
+
         self.window?.rootViewController = navigationController
         self.window!.makeKeyAndVisible()
         

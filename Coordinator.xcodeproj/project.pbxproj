@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B955E4CE26537E07004E6FD4 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955E4CD26537E07004E6FD4 /* Tree.swift */; };
+		B955E4D2265384A9004E6FD4 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955E4D1265384A9004E6FD4 /* DeepLink.swift */; };
 		B9626B802652599E00252DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B7F2652599E00252DAA /* AppDelegate.swift */; };
 		B9626B872652599E00252DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9626B852652599E00252DAA /* Main.storyboard */; };
 		B9626B892652599F00252DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9626B882652599F00252DAA /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B955E4CD26537E07004E6FD4 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		B955E4D1265384A9004E6FD4 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		B9626B7C2652599E00252DAA /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9626B7F2652599E00252DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9626B862652599E00252DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B955E4C826535DB1004E6FD4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B955E4D1265384A9004E6FD4 /* DeepLink.swift */,
+				B9626B9B26525A7600252DAA /* Coordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		B9626B732652599E00252DAA = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,7 @@
 				B9626B9426525A7600252DAA /* StoryboardIdentifiable.swift */,
 				B9626B9526525A7600252DAA /* NibIdentifiable.swift */,
 				B9626B9626525A7600252DAA /* UIViewController+Utils.swift */,
+				B955E4CD26537E07004E6FD4 /* Tree.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -97,7 +111,7 @@
 		B9626B9726525A7600252DAA /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				B9626B9B26525A7600252DAA /* Coordinator.swift */,
+				B955E4C826535DB1004E6FD4 /* Core */,
 				B9626B9826525A7600252DAA /* AppCoordinator.swift */,
 				B9626B9926525A7600252DAA /* LoginCoordinator.swift */,
 				B9626B9A26525A7600252DAA /* HomeCoordinator.swift */,
@@ -188,9 +202,11 @@
 				B9626BA926525A7600252DAA /* LoginViewController.swift in Sources */,
 				B9626BA726525A7600252DAA /* AppViewController.swift in Sources */,
 				B9626BA326525A7600252DAA /* AppCoordinator.swift in Sources */,
+				B955E4D2265384A9004E6FD4 /* DeepLink.swift in Sources */,
 				B9626BA426525A7600252DAA /* LoginCoordinator.swift in Sources */,
 				B9626BA126525A7600252DAA /* NibIdentifiable.swift in Sources */,
 				B9626B802652599E00252DAA /* AppDelegate.swift in Sources */,
+				B955E4CE26537E07004E6FD4 /* Tree.swift in Sources */,
 				B9626BA526525A7600252DAA /* HomeCoordinator.swift in Sources */,
 				B9626BA826525A7600252DAA /* HomeViewController.swift in Sources */,
 				B9626BA026525A7600252DAA /* StoryboardIdentifiable.swift in Sources */,
