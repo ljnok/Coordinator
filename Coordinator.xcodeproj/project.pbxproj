@@ -23,6 +23,7 @@
 		B9626BA726525A7600252DAA /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9D26525A7600252DAA /* AppViewController.swift */; };
 		B9626BA826525A7600252DAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9E26525A7600252DAA /* HomeViewController.swift */; };
 		B9626BA926525A7600252DAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9F26525A7600252DAA /* LoginViewController.swift */; };
+		B9FAD023265B8F5F00D9A6F5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FAD022265B8F5F00D9A6F5 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B9626B9D26525A7600252DAA /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		B9626B9E26525A7600252DAA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B9626B9F26525A7600252DAA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B9FAD022265B8F5F00D9A6F5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				B955E4D1265384A9004E6FD4 /* DeepLink.swift */,
 				B9626B9B26525A7600252DAA /* Coordinator.swift */,
+				B9FAD022265B8F5F00D9A6F5 /* Test.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				B9626BA926525A7600252DAA /* LoginViewController.swift in Sources */,
 				B9626BA726525A7600252DAA /* AppViewController.swift in Sources */,
 				B9626BA326525A7600252DAA /* AppCoordinator.swift in Sources */,
+				B9FAD023265B8F5F00D9A6F5 /* Test.swift in Sources */,
 				B955E4D2265384A9004E6FD4 /* DeepLink.swift in Sources */,
 				B9626BA426525A7600252DAA /* LoginCoordinator.swift in Sources */,
 				B9626BA126525A7600252DAA /* NibIdentifiable.swift in Sources */,

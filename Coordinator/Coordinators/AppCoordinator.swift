@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum AppLink: Link {
+enum AppLink: String, Link {
     case login
     case home
 }
@@ -44,6 +44,7 @@ class AppCoordinator: Coordinator {
             break
         }
     }
+    
 
     // MARK: - Public
     func loginButtonPressed() {

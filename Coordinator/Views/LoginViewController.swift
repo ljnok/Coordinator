@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         super.didMove(toParent: parent)
         
         if parent == nil {
-            coordinator.backButtonPressed()
+            //coordinator.backButtonPressed()
         }
     }
 }

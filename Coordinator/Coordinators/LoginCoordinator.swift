@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum LoginLink: Link {
+enum LoginLink: String, Link {
     case signUp
 }
 

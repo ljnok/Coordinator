@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum HomeLink: Link {
+enum HomeLink: String, Link {
     case setting
     case newsDetail
 }
