@@ -20,7 +20,3 @@ class DeepLink<T>: Node<Link> {
     }
 }
 
-
-// Type, Protocol 관련
-// https://sujinnaljin.medium.com/swift-generic%EA%B3%BC-subtype-c43bae2cf41
-// https://stackoverflow.com/questions/31438368/swift-whats-the-difference-between-metatype-type-and-self
