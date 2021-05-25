@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Node<T> {
+public class Node<T> {
     var value: T
     weak var parent: Node?
     var children: [Node] = []

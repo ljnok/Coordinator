@@ -7,39 +7,34 @@
 
 import UIKit
 
-enum LoginLink: String, Link {
+enum LoginLink: Link {
     case signUp
 }
 
-class LoginCoordinator: Coordinator {
+class LoginCoordinator: BaseCoordinator<LoginLink> {
 
-    var children: [Coordinator] = []
-
-    var rootViewController: UINavigationController
-    
-    var dismiss: ((Coordinator) -> Void)?
-
-    init(rootViewController: UINavigationController) {
-        self.rootViewController = rootViewController
+    override init(rootViewController: UINavigationController) {
+        super.init(rootViewController: rootViewController)
         
         let viewController = LoginViewController.instantiateFromStoryboard()
         viewController.coordinator = self
-        rootViewController.pushViewController(viewController, animated: false)
+        rootViewController.pushViewController(viewController, animated: true)
     }
 
-    func start(_ deepLink: DeepLink? = nil) {
-        guard let link = deepLink,
-              let value = link.value as? LoginLink
-        else { return }
-        
-        switch value {
+    override func prepare(for link: DeepLink<LoginLink>) {
+        switch link.type {
         case .signUp:
-            break
+            let signUpCoordinator = SignUpCoordinator(rootViewController: rootViewController)
+            signUpCoordinator.start()
         }
     }
-
+    
     // MARK: - Public
+    func signUpButtonPressed() {
+        start(DeepLink(value: LoginLink.signUp))
+    }
+    
     func backButtonPressed() {
-        dismiss?(self)
+        dismiss(self)
     }
 }

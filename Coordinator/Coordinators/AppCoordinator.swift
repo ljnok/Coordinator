@@ -7,44 +7,34 @@
 
 import UIKit
 
-enum AppLink: String, Link {
+enum AppLink: Link {
     case login
     case home
 }
 
-class AppCoordinator: Coordinator {
+class AppCoordinator: BaseCoordinator<AppLink> {
 
-    var children: [Coordinator] = []
-
-    var rootViewController: UINavigationController
-    
-    init(rootViewController: UINavigationController) {
-        self.rootViewController = rootViewController
+    override init(rootViewController: UINavigationController) {
+        super.init(rootViewController: rootViewController)
         
         let viewController = AppViewController.instantiateFromStoryboard()
         viewController.coordinator = self
-        rootViewController.setViewControllers([viewController], animated: false)
+        rootViewController.setViewControllers([viewController], animated: true)
     }
-
-    func start(_ deepLink: DeepLink? = nil) {
-        guard let link = deepLink,
-              let value = link.value as? AppLink
-        else { return }
-        
-        switch value {
+    
+    override func prepare(for link: DeepLink<AppLink>) {
+        switch link.type {
         case .login:
             let loginCoordinator = LoginCoordinator(rootViewController: rootViewController)
-            loginCoordinator.dismiss = didChildDismissed(_:)
             let subLink = link.children.first(where: { $0.value is LoginLink })
             loginCoordinator.start(subLink as? DeepLink)
 
-            children.append(loginCoordinator)
-            
         case .home:
-            break
+            let homeCoordinator = HomeCoordinator(rootViewController: rootViewController)
+            let subLink = link.children.first(where: { $0.value is HomeLink })
+            homeCoordinator.start(subLink as? DeepLink)
         }
     }
-    
 
     // MARK: - Public
     func loginButtonPressed() {

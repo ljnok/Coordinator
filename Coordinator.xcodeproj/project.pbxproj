@@ -23,7 +23,10 @@
 		B9626BA726525A7600252DAA /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9D26525A7600252DAA /* AppViewController.swift */; };
 		B9626BA826525A7600252DAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9E26525A7600252DAA /* HomeViewController.swift */; };
 		B9626BA926525A7600252DAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9626B9F26525A7600252DAA /* LoginViewController.swift */; };
-		B9FAD023265B8F5F00D9A6F5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FAD022265B8F5F00D9A6F5 /* Test.swift */; };
+		B9D66042265C83EF0055CF59 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D66041265C83EF0055CF59 /* Stack.swift */; };
+		B9D66044265CBAF20055CF59 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D66043265CBAF20055CF59 /* BaseCoordinator.swift */; };
+		B9D66046265CC1510055CF59 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D66045265CC1510055CF59 /* SignUpViewController.swift */; };
+		B9D66048265CC1910055CF59 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D66047265CC1910055CF59 /* SignUpCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +48,10 @@
 		B9626B9D26525A7600252DAA /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		B9626B9E26525A7600252DAA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B9626B9F26525A7600252DAA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B9FAD022265B8F5F00D9A6F5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B9D66041265C83EF0055CF59 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B9D66043265CBAF20055CF59 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		B9D66045265CC1510055CF59 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B9D66047265CC1910055CF59 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,7 @@
 			children = (
 				B955E4D1265384A9004E6FD4 /* DeepLink.swift */,
 				B9626B9B26525A7600252DAA /* Coordinator.swift */,
-				B9FAD022265B8F5F00D9A6F5 /* Test.swift */,
+				B9D66043265CBAF20055CF59 /* BaseCoordinator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 				B9626B9526525A7600252DAA /* NibIdentifiable.swift */,
 				B9626B9626525A7600252DAA /* UIViewController+Utils.swift */,
 				B955E4CD26537E07004E6FD4 /* Tree.swift */,
+				B9D66041265C83EF0055CF59 /* Stack.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 				B9626B9826525A7600252DAA /* AppCoordinator.swift */,
 				B9626B9926525A7600252DAA /* LoginCoordinator.swift */,
 				B9626B9A26525A7600252DAA /* HomeCoordinator.swift */,
+				B9D66047265CC1910055CF59 /* SignUpCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				B9626B9D26525A7600252DAA /* AppViewController.swift */,
 				B9626B9F26525A7600252DAA /* LoginViewController.swift */,
 				B9626B9E26525A7600252DAA /* HomeViewController.swift */,
+				B9D66045265CC1510055CF59 /* SignUpViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,19 +212,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9626BA926525A7600252DAA /* LoginViewController.swift in Sources */,
+				B9D66042265C83EF0055CF59 /* Stack.swift in Sources */,
 				B9626BA726525A7600252DAA /* AppViewController.swift in Sources */,
 				B9626BA326525A7600252DAA /* AppCoordinator.swift in Sources */,
-				B9FAD023265B8F5F00D9A6F5 /* Test.swift in Sources */,
 				B955E4D2265384A9004E6FD4 /* DeepLink.swift in Sources */,
 				B9626BA426525A7600252DAA /* LoginCoordinator.swift in Sources */,
 				B9626BA126525A7600252DAA /* NibIdentifiable.swift in Sources */,
 				B9626B802652599E00252DAA /* AppDelegate.swift in Sources */,
 				B955E4CE26537E07004E6FD4 /* Tree.swift in Sources */,
+				B9D66048265CC1910055CF59 /* SignUpCoordinator.swift in Sources */,
 				B9626BA526525A7600252DAA /* HomeCoordinator.swift in Sources */,
+				B9D66046265CC1510055CF59 /* SignUpViewController.swift in Sources */,
 				B9626BA826525A7600252DAA /* HomeViewController.swift in Sources */,
 				B9626BA026525A7600252DAA /* StoryboardIdentifiable.swift in Sources */,
 				B9626BA226525A7600252DAA /* UIViewController+Utils.swift in Sources */,
 				B9626BA626525A7600252DAA /* Coordinator.swift in Sources */,
+				B9D66044265CBAF20055CF59 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

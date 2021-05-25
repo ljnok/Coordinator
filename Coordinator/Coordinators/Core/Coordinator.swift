@@ -7,19 +7,23 @@
 
 import UIKit
 
-protocol Coordinator: AnyObject {
+protocol CoordinatorItem: AnyObject {
+    var children: [CoordinatorItem] { get set }
+}
 
-    var children: [Coordinator] { get set }
+protocol Coordinator: Linker, CoordinatorItem {
 
-    func start(_ deepLink: DeepLink?)
+    func start(_ deepLink: DeepLink<LinkType>?)
+
+    func prepare(for link: DeepLink<LinkType>)
 }
 
 extension Coordinator {
     
-    func didChildDismissed(_ coordinator: Coordinator) {
+    func didChildDismissed(_ coordinator: CoordinatorItem) {
         guard let index = children.firstIndex(where: { $0 === coordinator})
         else { return }
 
-        children.remove(at: index)
+        //children.remove(at: index)
     }
 }
